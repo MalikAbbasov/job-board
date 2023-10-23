@@ -1,0 +1,214 @@
+@mixin df {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin lr{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer_all{
+    width: 100vw;
+    height: 594px;
+    background-color: #001D38;
+    .footer_top{
+        width: 100%;
+        height: 536px;
+        padding-top: 145px;
+        padding-bottom: 129px;
+        @include lr;
+        @include df;
+        gap: 50px;
+        &_job_board{
+            width: 255px;
+            height: 262px;
+            .img{
+                width: 255px;
+                height: 59px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                color: aliceblue;
+                .icon{
+                    width: 50px;
+                    height: 50px;
+                    font-size: 20px;
+                    border-radius: 50%;
+                    border: 1px solid rgb(6, 223, 53) ;
+                    background-color: rgb(6, 223, 53);
+                    @include df;
+                    &:hover{
+                        background-color: initial;
+                    }
+                }
+                .metn{
+                    h4{
+                        font-size: 25px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font-size: 17px;
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .text{
+                width: 255px;
+                height: 72px;
+                margin-top: 25px;
+                p{
+                    color: #AAB1B7;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;             
+                }
+            }
+            .icons{
+                width: 255px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                margin-top: 35px;
+                gap: 10px;
+                i{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 1px solid #AAB1B7;
+                    @include df;
+                    color: #AAB1B7;
+                    transition: 300ms;
+                    &:hover{
+                        background-color: #00D363;
+                        cursor: pointer;
+                        color: aliceblue;
+                    }
+                }
+            }
+        }
+        &_company{
+            width: 190px;
+            height: 262px;
+            h3{
+                width: 160px;
+                height: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                color: #FFFFFF;
+                text-transform: capitalize;
+                margin-bottom: 40px;
+                font-family: "Roboto", sans-serif;             
+            }
+            ul{
+                width: 160px;
+                height: 168px;
+                li{
+                    height: 42px;
+                    color: #AAB1B7;
+                    font-size: 16px;
+                    line-height: 42px;
+                    transition: 300ms;
+                    &:hover{
+                        cursor: pointer;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        &_category{
+            width: 190px;
+            height: 262px;
+            h3{
+                width: 160px;
+                height: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                color: #FFFFFF;
+                text-transform: capitalize;
+                margin-bottom: 40px;
+                font-family: "Roboto", sans-serif;             
+            }
+            ul{
+                width: 160px;
+                height: 168px;
+                li{
+                    width: 160;
+                    height: 42px;
+                    color: #AAB1B7;
+                    font-size: 16px;
+                    line-height: 42px;
+                    transition: 300ms;
+                    &:hover{
+                        cursor: pointer;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        &_subscribe{
+            width: 380px;
+            height: 262px;
+            h3{
+                font-size: 18px;
+                font-weight: 500;
+                color: #FFFFFF;
+                text-transform: capitalize;
+                margin-bottom: 40px;
+                font-family: "Roboto", sans-serif;          
+            }
+            .mail{
+                margin-bottom: 20px;
+                position: relative;
+                input{
+                    width: 350px;
+                    height: 50px;
+                    background-color: initial;
+                    color: #FFFFFF;
+                    border: 1px solid #FFFFFF;
+                }
+                button{
+                    position: absolute;
+                    width: 106px;
+                    height: 40px;
+                    border-radius: 5px;
+                    background-color: #00D363;
+                    color: #FFFFFF;
+                    transition: 300ms;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            p{
+                width: 350px;
+                height: 52px;
+                font-size: 16px;
+                color: #AAB1B7;
+                line-height: 26px;
+
+            }
+        }
+    }
+    .footer_down{
+        width: 100vw;
+        height: 58px;
+        
+        p{
+            width: 1140px;
+            height: 28px;
+            @include lr;
+            @include df;
+            font-size: 18px;
+            color: #AAB1B7;
+            font-weight: 500;
+            span{
+                color: #00D363;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,147 @@
+@mixin df {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_top{
+    background-image: url(https://preview.colorlib.com/theme/jobboard2/img/banner/banner.png.webp);
+    width: 100vw;
+    height: 700px; 
+    
+    &_high{
+        max-width: 100vw;
+        height: 12vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+
+
+        .left{
+            width: 400px;
+            height: 18vh;
+            @include df;
+            gap: 20px;
+            .icon{
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                border-radius: 50%;
+                border: 1px solid rgb(6, 223, 53) ;
+                background-color: rgb(6, 223, 53);
+                @include df;
+                &:hover{
+                    background-color: initial;
+                }
+            }
+            .metn{
+                h4{
+                    font-size: 25px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 17px;
+                }
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .middle{
+            width: 600px;
+            height: 18vh;
+            @include df;
+            ul{
+                @include df;
+                flex-direction: row;
+                gap: 50px;
+                font-size: 20px;
+                li{
+                    transition: 400ms;
+                    &:hover{
+                        cursor: pointer;
+                        color: greenyellow;
+                    }
+                }
+            }
+        }
+        
+        .right{
+            width: 400px;
+            height: 18vh;
+            @include df;
+            gap: 50px;
+            font-size: 20px;
+            p{
+                transition: 300ms;
+                &:hover{
+                    cursor: pointer;
+                    color: green
+                }
+            }
+            .button{
+                @include df;
+                width: 200px;
+                height: 7vh;
+                border-radius: 10%;
+                border: 1px solid green;
+                background-color: green;
+                &:hover{
+                    cursor: pointer;
+                    background-color: initial;
+                }
+            }
+
+        }
+    }
+    &_text{
+        width: 100vw;
+        height: 500px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: right;
+        .text{
+            display: flex;
+            justify-content: center;
+            align-items: right;
+            flex-direction: column;
+            color: white;
+        }
+        h5{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-size: 56px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        &_button{
+            width: 210px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: green;
+            border: 1px solid green;
+            @include df;
+            &:hover{
+                cursor: pointer;
+                background-color: initial;
+            }
+        }
+        .header_top_photo{
+            width: 600px;
+            height: 500px;
+            display: flex;
+            align-items: end;
+            justify-content: end;
+
+        }
+    }
+
+}
